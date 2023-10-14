@@ -1,0 +1,9 @@
+venv
+**/.pytest_cache
+**/allure-results
+**/logfile.log
+**/pyreport.html
+**/result.xml
+.idea
+**/__pycache__
+

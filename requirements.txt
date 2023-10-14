@@ -1,0 +1,6 @@
+selenium~=4.11.2
+pytest~=7.4.0
+webdriver-manager~=4.0.0
+pytest-rerunfailures
+pytest-pyreport
+allure-pytest
