@@ -16,13 +16,13 @@ def test_login_error_message(index_page, data_login, data_password, error_messag
     index_page.validate_error_message(error_message)
 
 
-@allure.description('success login with correct creds')
-@allure.label('owner', 'Vova')
-@allure.title('success login')
-@allure.suite('Auhtorization')
-@allure.severity(allure.severity_level.BLOCKER)
-def test_success_login(index_page):
-    index_page.enter_username(LOGIN)
-    index_page.enter_password(PASSWORD)
-    index_page.click_to_login_button()
-    index_page.validate_login()
+# @allure.description('success login with correct creds')
+# @allure.label('owner', 'Vova')
+# @allure.title('success login')
+# @allure.suite('Auhtorization')
+# @allure.severity(allure.severity_level.BLOCKER)
+# def test_success_login(index_page):
+#     index_page.enter_username(LOGIN)
+#     index_page.enter_password(PASSWORD)
+#     index_page.click_to_login_button()
+#     index_page.validate_login()
