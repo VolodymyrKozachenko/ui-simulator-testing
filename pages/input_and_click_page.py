@@ -24,6 +24,3 @@ class InputAndClickPage(BaseObject):
         expected_text = "hello"
         actual_text = self.get_text(self.ITEMS_FIELD)
         assert actual_text == expected_text, f"FAILED. Expected {expected_text}, but actually got {actual_text}"
-
-
-
