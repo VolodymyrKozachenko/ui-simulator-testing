@@ -6,4 +6,6 @@ venv
 **/result.xml
 .idea
 **/__pycache__
-
+credentials.json
+test_report.json
+test_results.png
