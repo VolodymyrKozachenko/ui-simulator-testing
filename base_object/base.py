@@ -59,18 +59,17 @@ class BaseObject:
         actions.drag_and_drop(to_drag_elem, to_drop_elem).perform()
 
     def get_attribute_of_elements(self, locator, data):
-        image_element = self.is_visible(locator)  # находим элемент обычным образом
-        actual_text = image_element.get_attribute(data)  # достаем то что находится в src
+        image_element = self.is_visible(locator)
+        actual_text = image_element.get_attribute(data)
         print(actual_text)
 
     def css_property(self, locator, data_of_colour):
-        elem = self.is_visible(locator)  # находим элемент, а driver - это экземпляр вебдрайвера.
-        color = elem.value_of_css_property(data_of_colour)  # достаем css property
-        expected_color = ''  # ожидаемый цвет
-        assert expected_color == color  # сверяем
+        elem = self.is_visible(locator)
+        color = elem.value_of_css_property(data_of_colour)
+        expected_color = ''
+        assert expected_color == color
 
     def select_class(self, locator, list_item):
         dropdown = self.is_visible(locator)
-        select = Select(dropdown)  # создаем экземпляр класса Select и с помощью него начинаем взаимодействовать с выпадающим списком
+        select = Select(dropdown)
         select.select_by_visible_text(list_item)
-
